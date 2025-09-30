@@ -1,0 +1,85 @@
+# ----------------------------
+# Node.js / npm
+# ----------------------------
+
+# Dependency directories (reinstall with npm install)
+node_modules/
+
+# Debug and error logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ----------------------------
+# Build outputs
+# ----------------------------
+
+# React build folder
+build/
+
+# Express or backend transpiled output
+dist/
+
+# Temporary cache files
+.cache/
+*.cache
+*.tgz
+
+# ----------------------------
+# Environment variables
+# ----------------------------
+
+# Local environment files (never commit secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Instead, create an .env.example with placeholder values
+
+# ----------------------------
+# Editors / IDEs
+# ----------------------------
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Misc editor files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ----------------------------
+# OS-specific junk
+# ----------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# ----------------------------
+# Docker
+# ----------------------------
+
+# Override configs (personal/local only)
+docker-compose.override.yml
+
+# PIDs and temp files
+*.pid
+*.seed
+*.bak
+*.tmp
+
+# Database volumes (local Postgres data dir, prevents committing raw DB files)
+pgdata/
+db-data/
