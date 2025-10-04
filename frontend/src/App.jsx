@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
 import MediaPage from "./pages/MediaPage";
+import TrailerPage from "./pages/TrailerPage";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/media" element={<MediaPage />} />
+          <Route path="/trailer" element={<TrailerPage />} />
         </Routes>
       </main>
     </div>

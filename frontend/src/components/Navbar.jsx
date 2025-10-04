@@ -13,6 +13,7 @@ const Navbar = () => {
         {/* Navigation Links */}
         <nav className="flex items-center gap-6">
           <Link to="/about" className="hover:text-primary">About</Link>
+          <Link to="/trailer" className="hover:text-primary">Trailer</Link>
           <Link to="/media" className="hover:text-primary">Media</Link>
           <Link to="/faq" className="hover:text-primary">FAQ</Link>
           <Link to="/contact" className="hover:text-primary">Contact</Link>
