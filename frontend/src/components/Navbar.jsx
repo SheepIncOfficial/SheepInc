@@ -1,3 +1,5 @@
+//This file interacts with the Navbar component used in App.jsx to provide navigation links and a Discord icon link.
+
 import { Link } from "react-router-dom";
 import { FaDiscord } from "react-icons/fa"; // Discord logo
 
@@ -37,3 +39,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

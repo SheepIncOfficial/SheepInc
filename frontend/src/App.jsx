@@ -13,6 +13,8 @@ const App = () => {
       {/* Navbar visible on every page */}
       <Navbar />
 
+      {/* Umami analytics tracker is now rendered at the root level in main.jsx */}
+
       {/* Page routes */}
       <main className="flex-1">
         <Routes>
@@ -29,3 +31,8 @@ const App = () => {
 };
 
 export default App;
+
+//This file is for the main application component that sets up routing and includes the Navbar component.
+//It uses React Router to define routes for different pages like Home, About, FAQ, Contact, Media, and Trailer.
+
+
