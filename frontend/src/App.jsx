@@ -34,5 +34,3 @@ export default App;
 
 //This file is for the main application component that sets up routing and includes the Navbar component.
 //It uses React Router to define routes for different pages like Home, About, FAQ, Contact, Media, and Trailer.
-
-
