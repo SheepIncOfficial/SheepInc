@@ -25,7 +25,7 @@ const Navbar = () => {
 
           {/* Discord Icon Link */}
           <a
-            href="https://discord.gg/YOUR_INVITE_CODE"
+            href="https://discord.com/invite/jUpvqHGHw2"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary"
