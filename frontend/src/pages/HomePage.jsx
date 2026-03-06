@@ -44,13 +44,13 @@ const HomePage = () => {
           <a href="https://discord.com/invite/jUpvqHGHw2" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#5865F2] transition-colors" aria-label="Discord">
             <FaDiscord className="w-7 h-7" />
           </a>
-          <a href="https://x.com/YourHandle" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="X">
+          <a href="https://x.com/TeamOvis" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="X">
             <FaXTwitter className="w-7 h-7" />
           </a>
-          <a href="https://twitch.tv/YourChannel" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#9146FF] transition-colors" aria-label="Twitch">
+          <a href="https://www.twitch.tv/TeamOvis" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#9146FF] transition-colors" aria-label="Twitch">
             <FaTwitch className="w-7 h-7" />
           </a>
-          <a href="https://linktr.ee/YourName" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#43E660] transition-colors" aria-label="Linktree">
+          <a href="https://linktr.ee/teamovis" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#43E660] transition-colors" aria-label="Linktree">
             <FaLink className="w-7 h-7" />
           </a>
         </div>
