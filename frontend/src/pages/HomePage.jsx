@@ -16,12 +16,12 @@ const HomePage = () => {
         />
       </div>
 
-      {/* Main Content: Centered Text Block (No Card, No Blur) */}
+      {/* Main Content: Centered Text Block */}
       <main className="flex-1 w-full flex items-center justify-center px-4 shrink-0">
         <div className="max-w-3xl text-center space-y-6">
           
-          {/* Body Text: Faint Amber Color, Rajdhani Font */}
-          <p className="text-lg md:text-xl text-amber-200 font-['Rajdhani'] font-semibold leading-relaxed text-justify md:text-center drop-shadow-md">
+          {/* Body Text: White Color, Rajdhani Font */}
+          <p className="text-lg md:text-xl text-white-200 font-['Rajdhani'] font-semibold leading-relaxed text-justify md:text-center drop-shadow-md">
             Sheep, Inc. is the upcoming 2.5D artificial roguelike life simulator where you evolve and protect your herd of sheep against predators and hostile environments, round after round, until you beat the game, or win a Darwin Award. 
             <br /><br />
             Your sheep have real genes: abuse genetic engineering to mold your perfect breed of super sheep. Many strategies are viable. Keep it simple as a breed of unkillable passive defenders. Or ascend to the top of the food chain as an apex predator. Or create an eldritch horror. The choice is yours. Well, if RNG cooperates...

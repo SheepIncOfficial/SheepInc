@@ -1,23 +1,20 @@
 import { Routes, Route } from "react-router";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import FAQPage from "./pages/FAQPage";
-import ContactPage from "./pages/ContactPage";
-import MediaPage from "./pages/MediaPage";
-import TrailerPage from "./pages/TrailerPage";
-import BackgroundBanner from "./assets/BackgroundBanner.png"; // Import your banner here
+
+import BackgroundBanner from "./assets/BackgroundBanner.png"; 
 
 const App = () => {
   return (
     <div data-theme="black" className="min-h-screen flex flex-col relative">
       
       {/* GLOBAL BACKGROUND BANNER */}
-      {/* Fixed position covers the whole screen behind everything */}
+      
       <div className="fixed inset-0 z-0">
         <img 
           src={BackgroundBanner} 
           alt="Global Background Banner" 
+          
           className="w-full h-full object-cover blur-[2px]" 
         />
         {/* Dark Overlay: Makes text readable on top of the image */}
@@ -35,11 +32,6 @@ const App = () => {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/faq" element={<FAQPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/media" element={<MediaPage />} />
-            <Route path="/trailer" element={<TrailerPage />} />
           </Routes>
         </main>
       </div>
