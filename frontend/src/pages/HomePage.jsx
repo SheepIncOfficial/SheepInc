@@ -31,8 +31,12 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen flex flex-col w-full relative">
-      {/* Top Right - Team Ovis Logo & Socials */}
-      <div className="absolute top-4 right-4 flex flex-col items-center gap-2 z-10">
+      
+      {/* 
+         TOP RIGHT - Team Ovis Logo & Socials 
+         FIX: Added 'hidden md:flex' -> Hidden on mobile, Flex (visible) on medium screens+
+      */}
+      <div className="hidden md:flex absolute top-4 right-4 flex-col items-center gap-2 z-50">
         <a
           href="https://linktr.ee/teamovis"
           target="_blank"
@@ -138,7 +142,6 @@ const HomePage = () => {
       </main>
 
       {/* --- CAROUSEL SECTION --- */}
-
       <div className="w-full max-w-5xl mx-auto px-4 mb-12 shrink-0">
         <style>{`
           .swiper-button-next, .swiper-button-prev {
@@ -177,7 +180,6 @@ const HomePage = () => {
         >
           {mediaItems.map((item, index) => (
             <SwiperSlide key={index}>
-              {/* Square container that matches your image aspect ratio */}
               <div className="w-full aspect-square">
                 <img
                   src={item.src}
@@ -215,6 +217,8 @@ const HomePage = () => {
             info@sheepincgame.com
           </a>
         </p>
+        
+        {/* Bottom Logo (Visible on all screens) */}
         <a
           href="https://linktr.ee/teamovis"
           target="_blank"
@@ -229,6 +233,7 @@ const HomePage = () => {
           />
         </a>
 
+        {/* Bottom Socials (Visible on all screens) */}
         <div className="flex items-center gap-6">
           <a
             href="https://discord.com/invite/jUpvqHGHw2"
