@@ -168,7 +168,7 @@ const HomePage = () => {
         <Swiper
           spaceBetween={0}
           centeredSlides={true}
-          autoplay={{ delay: 12000, disableOnInteraction: false }}
+          autoplay={{ delay: 12000, disableOnInteraction: true }}
           pagination={{ clickable: true, dynamicBullets: true }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
