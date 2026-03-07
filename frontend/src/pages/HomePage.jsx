@@ -30,9 +30,64 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col w-full">
+    <div className="min-h-screen flex flex-col w-full relative">
+      {/* Top Right - Team Ovis Logo & Socials */}
+      <div className="absolute top-4 right-4 flex flex-col items-center gap-2 z-10">
+        <a
+          href="https://linktr.ee/teamovis"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-opacity hover:opacity-80"
+          aria-label="Team Ovis"
+        >
+          <img
+            src={TeamOvisLogo}
+            alt="Team Ovis Logo"
+            className="h-12 w-auto"
+          />
+        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="https://discord.com/invite/jUpvqHGHw2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[#5865F2] transition-colors"
+            aria-label="Discord"
+          >
+            <FaDiscord className="w-5 h-5" />
+          </a>
+          <a
+            href="https://x.com/TeamOvis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors"
+            aria-label="X"
+          >
+            <FaXTwitter className="w-5 h-5" />
+          </a>
+          <a
+            href="https://www.twitch.tv/TeamOvis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[#9146FF] transition-colors"
+            aria-label="Twitch"
+          >
+            <FaTwitch className="w-5 h-5" />
+          </a>
+          <a
+            href="https://linktr.ee/teamovis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[#43E660] transition-colors"
+            aria-label="Linktree"
+          >
+            <FaLink className="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+
       {/* Top Logo Area */}
-      <div className="w-full py-12 flex items-center justify-center shrink-0">
+      <div className="w-full pt-12 pb-4 flex items-center justify-center shrink-0">
         <a href="https://www.sheepincgame.com" className="transition-opacity hover:opacity-80">
           <img
             src={SheepIncLogo}
@@ -42,33 +97,41 @@ const HomePage = () => {
         </a>
       </div>
 
+      {/* Discord Playtest CTA */}
+      <div className="w-full px-4 py-4 flex items-center justify-center shrink-0">
+        <a
+          href="https://discord.com/invite/jUpvqHGHw2"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-5 py-3 bg-[#5865F2] hover:bg-[#4752C4] text-white font-['Rajdhani'] font-bold text-lg md:text-xl rounded-lg transition-all hover:scale-105 shadow-lg"
+        >
+          Join our Discord server to reserve your spot in the playtest
+          <FaDiscord className="w-6 h-6" />
+        </a>
+      </div>
+
       {/* Announcement Trailer */}
-      <div className="w-full px-4 py-3 flex items-center justify-center shrink-0">
-        <span className="text-white-200 font-['Rajdhani'] font-bold text-lg md:text-xl">
-          Announcement trailer: TBD (Stay tuned!)
-        </span>
+      <div className="w-full px-4 py-6 flex items-center justify-center shrink-0">
+        <div className="bg-gray-800/60 backdrop-blur-sm px-6 py-3 rounded-lg border border-gray-700">
+          <span className="text-white font-['Rajdhani'] font-bold text-xl md:text-2xl tracking-wide">
+            Announcement trailer: TBD (Stay tuned!)
+          </span>
+        </div>
       </div>
 
       {/* Main Content: Centered Text Block */}
       <main className="flex-1 w-full flex items-center justify-center px-4 shrink-0">
         <div className="max-w-3xl text-center space-y-6">
           <p className="text-lg md:text-xl text-white-200 font-['Rajdhani'] font-semibold leading-relaxed text-justify md:text-center drop-shadow-md">
-            Sheep, Inc. is the upcoming 2.5D artificial roguelike life simulator
-            game where you evolve and protect your herd of sheep against
+            An upcoming 2.5D roguelike artificial life simulator game where you evolve and protect your herd of sheep against
             predators and hostile environments, round after round, until you
             beat the game, or win a Darwin Award.
-            <br />
-            <br />
-            Your sheep have real genes: abuse genetic engineering to mold your
-            perfect breed of super sheep. Many strategies are viable. Keep it
-            simple as a breed of unkillable passive defenders. Or ascend to the
-            top of the food chain as an apex predator. Or create an eldritch
-            horror. The choice is yours. Well, if RNG cooperates...
           </p>
         </div>
       </main>
 
       {/* --- CAROUSEL SECTION --- */}
+
       <div className="w-full max-w-5xl mx-auto px-4 mb-12 shrink-0">
         <style>{`
           .swiper-button-next, .swiper-button-prev {
@@ -121,17 +184,17 @@ const HomePage = () => {
       </div>
       {/* --- CAROUSEL SECTION ENDS --- */}
 
-      {/* Discord Playtest CTA */}
-      <div className="w-full px-4 py-4 flex items-center justify-center shrink-0">
-        <a
-          href="https://discord.com/invite/jUpvqHGHw2"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 bg-[#5865F2] hover:bg-[#4752C4] text-white font-['Rajdhani'] font-semibold text-base rounded-md transition-colors"
-        >
-          <FaDiscord className="w-5 h-5" />
-          Join our Discord server to reserve your spot in the playtest
-        </a>
+      {/* Second Paragraph */}
+      <div className="flex-1 w-full flex items-center justify-center px-4 py-6 shrink-0">
+        <div className="max-w-3xl text-center">
+          <p className="text-lg md:text-xl text-white-200 font-['Rajdhani'] font-semibold leading-relaxed text-justify md:text-center drop-shadow-md">
+            Your sheep have real genes: abuse genetic engineering to mold your
+            perfect breed of super sheep. Many strategies are viable. Keep it
+            simple as a breed of unkillable passive defenders. Or ascend to the
+            top of the food chain as an apex predator. Or create an eldritch
+            horror. The choice is yours. Well, if RNG cooperates...
+          </p>
+        </div>
       </div>
 
       {/* Bottom Block: Stuck to the absolute bottom */}
