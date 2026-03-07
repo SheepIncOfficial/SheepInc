@@ -88,7 +88,10 @@ const HomePage = () => {
 
       {/* Top Logo Area */}
       <div className="w-full pt-12 pb-4 flex items-center justify-center shrink-0">
-        <a href="https://www.sheepincgame.com" className="transition-opacity hover:opacity-80">
+        <a
+          href="https://www.sheepincgame.com"
+          className="transition-opacity hover:opacity-80"
+        >
           <img
             src={SheepIncLogo}
             alt="Sheep, Inc. Logo"
@@ -105,7 +108,7 @@ const HomePage = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-3 bg-[#5865F2] hover:bg-[#4752C4] text-white font-['Rajdhani'] font-bold text-lg md:text-xl rounded-lg transition-all hover:scale-105 shadow-lg"
         >
-          Join our Discord server to reserve your spot in the playtest
+          Reserve your spot in the playtest
           <FaDiscord className="w-6 h-6" />
         </a>
       </div>
@@ -123,9 +126,13 @@ const HomePage = () => {
       <main className="flex-1 w-full flex items-center justify-center px-4 shrink-0">
         <div className="max-w-3xl text-center space-y-6">
           <p className="text-lg md:text-xl text-white-200 font-['Rajdhani'] font-semibold leading-relaxed text-justify md:text-center drop-shadow-md">
-            An upcoming 2.5D roguelike artificial life simulator game where you evolve and protect your herd of sheep against
-            predators and hostile environments, round after round, until you
-            beat the game, or win a Darwin Award.
+            An upcoming 2.5D roguelike artificial life simulator game where you
+            evolve and protect your herd of sheep against predators and hostile
+            environments, round after round, until you beat the game, or win a
+            Darwin Award.
+            <br />
+            <br />
+            <br />
           </p>
         </div>
       </main>
@@ -199,6 +206,15 @@ const HomePage = () => {
 
       {/* Bottom Block: Stuck to the absolute bottom */}
       <div className="w-full py-8 flex flex-col items-center justify-center gap-4 mt-auto shrink-0">
+        <p className="text-lg text-white-200 text-center whitespace-normal">
+          For business inquiries, contact us at{" "}
+          <a
+            href="mailto:info@sheepincgame.com"
+            className="text-lg md:text-xl text-white-200 font-['Rajdhani'] font-semibold leading-relaxed text-justify md:text-center drop-shadow-md underline"
+          >
+            info@sheepincgame.com
+          </a>
+        </p>
         <a
           href="https://linktr.ee/teamovis"
           target="_blank"
@@ -252,9 +268,9 @@ const HomePage = () => {
           </a>
         </div>
 
-        <p className="text-sm text-gray-500 text-center whitespace-normal">
-          For business inquiries, contact us at <a href="mailto:info@sheepincgame.com" className="text-gray-400 hover:text-white transition-colors underline">info@sheepincgame.com</a>
-          <br />
+        <div className="text-white-200 text-center whitespace-normal"></div>
+
+        <p className="text-sm opacity-80">
           Copyright © 2025 Team Ovis. All rights reserved.
           <br />
           Team Ovis is John Wostenberg, Ben Escobar, and Keenan Wostenberg.
